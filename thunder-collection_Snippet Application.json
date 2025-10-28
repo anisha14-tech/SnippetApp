@@ -1,0 +1,202 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Snippet Application",
+    "dateExported": "2023-11-13T03:30:12.238Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "94683aa8-6671-460b-883d-70576632f185",
+            "name": "Users",
+            "containerId": "",
+            "created": "2023-10-08T02:20:15.028Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "9710bdba-e5b4-4559-b083-73c2b5435010",
+            "name": "Snippets",
+            "containerId": "",
+            "created": "2023-10-08T02:20:15.029Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "834993ed-1500-4ec4-9872-10f942923f81",
+            "name": "Bookmarks",
+            "containerId": "",
+            "created": "2023-10-08T02:20:15.030Z",
+            "sortNum": 30000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "f6a33e0e-4b6a-4d69-8829-ebcc12a1a313",
+            "colId": "34b2035e-0385-4943-a38a-748203255513",
+            "containerId": "94683aa8-6671-460b-883d-70576632f185",
+            "name": "POST /users",
+            "url": "localhost:8080/users",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-10-08T02:20:15.028Z",
+            "modified": "2023-10-08T02:20:15.028Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"nikhil_sakhuja\",\n  \"years_experience\": 8,\n  \"programming_languages\": [\n    \"Python\",\n    \"C++\"\n  ]\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "d27e21a4-8036-4bb1-b5b3-df40a94a37f1",
+            "colId": "34b2035e-0385-4943-a38a-748203255513",
+            "containerId": "94683aa8-6671-460b-883d-70576632f185",
+            "name": "GET /users/:id",
+            "url": "localhost:8080/users/65518c882be54a662ab3251a?snippets=true&bookmarks=true",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2023-10-08T02:20:15.029Z",
+            "modified": "2023-11-13T03:09:29.836Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "snippets",
+                    "value": "true",
+                    "isPath": false
+                },
+                {
+                    "name": "bookmarks",
+                    "value": "true",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "3c21f193-d643-476a-81a9-d44e6f4e977f",
+            "colId": "34b2035e-0385-4943-a38a-748203255513",
+            "containerId": "94683aa8-6671-460b-883d-70576632f185",
+            "name": "PUT /users/:id",
+            "url": "localhost:8080/users/65518c882be54a662ab3251a",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2023-10-08T02:20:15.030Z",
+            "modified": "2023-11-13T02:42:46.420Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"nikhil_sakhuja\",\n  \"years_experience\": 8,\n  \"programming_languages\": [\n    \"Python\",\n    \"C++\",\n    \"JavaScript\",\n    \"Node.js\",\n    \"Vue\"\n  ]\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "4b98c14d-13d4-4e87-ba35-a0dddbff2377",
+            "colId": "34b2035e-0385-4943-a38a-748203255513",
+            "containerId": "9710bdba-e5b4-4559-b083-73c2b5435010",
+            "name": "GET /snippets",
+            "url": "localhost:8080/snippets",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2023-10-08T02:20:15.031Z",
+            "modified": "2023-10-08T02:20:15.031Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "language",
+                    "value": "javascript",
+                    "isDisabled": true,
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "8a2da5e2-a33b-485f-8f82-2ad22472c7f0",
+            "colId": "34b2035e-0385-4943-a38a-748203255513",
+            "containerId": "9710bdba-e5b4-4559-b083-73c2b5435010",
+            "name": "GET /snippets/:id",
+            "url": "localhost:8080/snippets/6548283367d43227ad9d9de3",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2023-10-08T02:20:15.032Z",
+            "modified": "2023-11-13T02:59:55.959Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "bookmarkCount",
+                    "value": "true",
+                    "isDisabled": true,
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "a658c8dc-bd72-4d1b-81cd-25201dce367f",
+            "colId": "34b2035e-0385-4943-a38a-748203255513",
+            "containerId": "9710bdba-e5b4-4559-b083-73c2b5435010",
+            "name": "POST /snippets",
+            "url": "localhost:8080/snippets",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2023-10-08T02:20:15.033Z",
+            "modified": "2023-11-13T03:01:45.746Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"program to demonstrate conditional operator\",\n  \"code_snippet\": \"a, b = 10, 20 \\n min = a if a < b else b \\n print(min);\",\n  \"programming_language\": \"Python\",\n  \"user_id\": \"6548283267d43227ad9d9ddf\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "21a361c9-a445-43f4-ac8e-e9644f3f802b",
+            "colId": "34b2035e-0385-4943-a38a-748203255513",
+            "containerId": "9710bdba-e5b4-4559-b083-73c2b5435010",
+            "name": "DEL /snippets/:id",
+            "url": "localhost:8080/snippets/655191a3923dcd7c1b354a9c",
+            "method": "DELETE",
+            "sortNum": 100000,
+            "created": "2023-10-08T02:20:15.034Z",
+            "modified": "2023-11-13T03:02:22.510Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "ea1f31c0-a902-48f2-ba94-4f9e901d39be",
+            "colId": "34b2035e-0385-4943-a38a-748203255513",
+            "containerId": "834993ed-1500-4ec4-9872-10f942923f81",
+            "name": "POST /bookmarks",
+            "url": "localhost:8080/bookmarks",
+            "method": "POST",
+            "sortNum": 110000,
+            "created": "2023-10-08T02:20:15.035Z",
+            "modified": "2023-11-13T03:29:13.115Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"snippet_id\": \"6548283367d43227ad9d9de3\",\n  \"user_id\": \"6548283367d43227ad9d9de1\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "3d8da6a1-6f55-4c7f-adb9-46a6265cf6da",
+            "colId": "34b2035e-0385-4943-a38a-748203255513",
+            "containerId": "834993ed-1500-4ec4-9872-10f942923f81",
+            "name": "DEL /bookmarks/:id",
+            "url": "localhost:8080/bookmarks/6551980979e7fe1d4f713af4",
+            "method": "DELETE",
+            "sortNum": 120000,
+            "created": "2023-10-08T02:20:15.036Z",
+            "modified": "2023-11-13T03:29:24.855Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
